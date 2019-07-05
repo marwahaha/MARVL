@@ -21,7 +21,7 @@ shiny::runGitHub("MARVL", "meeter")
 # Instructions
 ## Gene Level Analysis 
 
-1. __Data Table__: Exploring the abudance for interested genes across different RNAi-mutants. The abundance is indicated as Log2-TPM (transcripts per million reads).
+1. __Data Table__: Exploring the abundance for interested genes across different RNAi-mutants. The abundance is indicated as Log2-TPM (transcripts per million reads).
 2. __Scatter Plot__: Abundance of interested genes in the two wild-type replicates. The abundance is normalized as above.
 3. __Heatmap__: An interactive heatmap for interested genes. The abundance is indicated as above.
 4. __Gene <-> miRNA__: An interactive scatterplot of miRNAs with strong correlation to the interested genes. To see the detailed information of Gene <-> miRNA, select the dots, and the corresponding information will be displayed below, including the abundance of genes (Log2-TPM) and miRNAs (Log2-normalized by RLE [1] using the median of snRNAs, snoRNAs and tRNAs). The correlation is indicated as spearman correlation, with only those p-value < 0.05 and abs(spearman r) > 0.70. Negative values indicate negative correlation between miRNA and Gene, and vice versa.
@@ -30,7 +30,7 @@ shiny::runGitHub("MARVL", "meeter")
 
 ## miRNA Level Analysis 
 
-1. __Data Table__: Exploring the abudance for interested miRNA across different RNAi-mutants. The abundance is indicated as Log2-normalized counts by RLE using the median of snRNAs, snoRNAs and tRNAs[1].
+1. __Data Table__: Exploring the abundance for interested miRNA across different RNAi-mutants. The abundance is indicated as Log2-normalized counts by RLE using the median of snRNAs, snoRNAs and tRNAs[1].
 2. __Scatter Plot__: Abundance of interested miRNAs in the two wild-type replicates. The abundance is normalized as above.
 3. __Heatmap__: An interactive heatmap for interested miRNAs. The abundance is indicated as above. 
 4. __RIP-seq__: Exploring the enrichment level of interested miRNA in AGO1 and AGO2 IP experiment, using corresponding knockout as control. The enrichment level is indicated as Log2 fold change between IP and the knockout library.
